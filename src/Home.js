@@ -1,11 +1,9 @@
 import React from "react";
-import Banner from "./Banner";
-import Card from "./Card";
+import Card from "./Components/Card/Card";
 
 function Home() {
   return (
-    <div className="home">
-      <Banner />
+    <div className="home">      
       <div className="app__section">
         <Card
           src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
@@ -18,9 +16,19 @@ function Home() {
           description="Spaces that are more than just a place to sleep."
         />
         <Card
+          src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
+          title="Online Experiences"
+          description="Unique activities we can do together, led by a world of hosts."
+        />
+        <Card
           src="https://a0.muscache.com/im/pictures/fdb46962-10c1-45fc-a228-d0b055411448.jpg?im_w=720"
           title="Entire homes"
           description="Comfortable private places, with room for friends or family."
+        />
+      </div>
+      <div >
+        <Card
+          src="https://i.pinimg.com/originals/39/5c/bd/395cbdc769cbbc96a8d123a5f1f16e80.jpg "
         />
       </div>
       <div className="app__section">
@@ -42,7 +50,13 @@ function Home() {
           description="Superhost with great amenities and a fabolous shopping complex nearby"
           price="£70/night"
         />
-      </div>
+        <Card
+          src="https://media.nomadicmatt.com/2018/apartment.jpg"
+          title="1 Bedroom apartment"
+          description="Superhost with great amenities and a fabolous shopping complex nearby"
+          price="£70/night"
+        />
+      </div>      
     </div>
   );
 }
