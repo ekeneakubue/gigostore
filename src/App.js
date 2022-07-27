@@ -6,15 +6,15 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Home";
 import SearchPage from "./SearchPage";
 import Carousel from "./Components/carousel/Carousel"
-import Banner from "./Components/Banner/Banner"
+import Navbar from "./Components/Navbar/Navbar"
 
 
 function App() {
   return (
-    <div className="app">
+    <React.Fragment>
       <Router>
         <Header />
-        <Banner />
+        <Navbar />
         <Carousel/>
         <Switch>
           <Route path="/search">
@@ -26,7 +26,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </div>
+  </React.Fragment>
   );
 }
 
