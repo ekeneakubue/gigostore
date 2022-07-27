@@ -51,33 +51,8 @@
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 500px){
-  div.card{
-    flex-direction:column;
-  }  
-}
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .card {
-    -ms-flex: 0 0 48.7%;
-    flex: 0 0 48.7%;
-  }
-}
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .card {
-    -ms-flex: 0 0 32%;
-    flex: 0 0 32%;
-  }
-}
-
-@media (min-width: 992px)
-{
-  .card {
-    -ms-flex: 0 0 24%;
-    flex: 0 0 24%;
-  }
-}
 
 @media screen and (max-width: 500px){
   div .card{
@@ -85,7 +60,9 @@
   } 
 
   div .card2{
-    background-color:red;
-    column-width: 12;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr max-content;
   }
 }
